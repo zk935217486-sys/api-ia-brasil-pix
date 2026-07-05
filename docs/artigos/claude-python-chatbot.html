@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Como criar um chatbot Claude no terminal em Python</title>
+    <meta
+      name="description"
+      content="Tutorial em PT-BR para criar um chatbot Claude no terminal com Python e token de API."
+    />
+    <link rel="canonical" href="https://zk935217486-sys.github.io/api-ia-brasil-pix/artigos/claude-python-chatbot.html" />
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="../index.html"><span class="brand-mark">ta</span><span>token ai</span></a>
+      <nav aria-label="Navegação principal">
+        <a href="../index.html#comparacao">Preço</a>
+        <a href="../index.html#codigo">Código</a>
+        <a href="../index.html#faq">FAQ</a>
+      </nav>
+      <a class="header-cta" href="https://api.8uie.com/home">R$5 grátis</a>
+    </header>
+    <main class="article-page">
+      <article>
+        <p class="eyebrow">Claude API Brasil</p>
+        <h1>Como criar um chatbot Claude no terminal em Python</h1>
+        <p class="hero-text">
+          Um exemplo pequeno para testar resposta do modelo, custo e latência antes de levar a integração para um produto.
+        </p>
+
+        <h2>Instale o SDK</h2>
+        <pre><code>pip install anthropic</code></pre>
+
+        <h2>Configure seu token</h2>
+        <pre><code>export TOKEN_AI_API_KEY="seu_token_aqui"</code></pre>
+
+        <h2>Código completo</h2>
+        <pre><code>import os
+from anthropic import Anthropic
+
+client = Anthropic(api_key=os.environ["TOKEN_AI_API_KEY"])
+
+print("Chat Claude. Digite 'sair' para encerrar.")
+
+while True:
+    prompt = input("Voce: ")
+    if prompt.lower() == "sair":
+        break
+
+    msg = client.messages.create(
+        model="claude-sonnet-4-20250514",
+        max_tokens=500,
+        messages=[{"role": "user", "content": prompt}],
+    )
+    print("Claude:", msg.content[0].text)</code></pre>
+
+        <h2>O ponto chato no Brasil</h2>
+        <p>
+          Muitas vezes o problema não é o código. É conseguir pagar API sem cartão internacional, fatura em dólar
+          e cobrança imprevisível. O token ai resolve essa parte com Pix em Real, R$5 grátis e suporte em português.
+        </p>
+
+        <a class="button secondary" href="https://github.com/zk935217486-sys/api-ia-brasil-pix">
+          Ver exemplo no GitHub
+        </a>
+      </article>
+    </main>
+  </body>
+</html>
+

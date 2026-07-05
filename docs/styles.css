@@ -253,7 +253,8 @@ section:not(.hero) {
 .signal-grid,
 .step-list,
 .metric-grid,
-.quote-grid {
+.quote-grid,
+.article-grid {
   display: grid;
   gap: 16px;
 }
@@ -403,6 +404,41 @@ td:last-child {
   margin-bottom: 18px;
 }
 
+.article-grid {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.article-grid a {
+  display: block;
+  min-height: 220px;
+  padding: 22px;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  text-decoration: none;
+}
+
+.article-grid span {
+  display: inline-block;
+  margin-bottom: 14px;
+  color: var(--blue);
+  font-family: "IBM Plex Mono", "SFMono-Regular", Consolas, monospace;
+  font-size: 12px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.article-grid strong {
+  display: block;
+  margin-bottom: 12px;
+  font-size: 22px;
+  line-height: 1.15;
+}
+
+.article-grid p {
+  color: var(--muted);
+}
+
 blockquote {
   margin: 0;
   font-size: 19px;
@@ -445,6 +481,36 @@ details p {
   margin-right: auto;
 }
 
+.article-page {
+  padding: clamp(40px, 7vw, 86px) clamp(18px, 4vw, 54px);
+}
+
+.article-page article {
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+.article-page h1 {
+  font-size: clamp(42px, 6vw, 76px);
+}
+
+.article-page h2 {
+  margin-top: 44px;
+  font-size: clamp(26px, 3vw, 38px);
+}
+
+.article-page pre {
+  margin: 18px 0;
+  padding: 18px;
+  background: var(--terminal);
+  color: #edf7f4;
+  border-radius: var(--radius);
+}
+
+.article-page .button {
+  margin-top: 18px;
+}
+
 footer {
   flex-wrap: wrap;
   justify-content: center;
@@ -473,7 +539,8 @@ footer {
   .split-table,
   .step-list,
   .metric-grid,
-  .quote-grid {
+  .quote-grid,
+  .article-grid {
     grid-template-columns: 1fr;
   }
 
@@ -499,4 +566,3 @@ footer {
     scroll-behavior: auto;
   }
 }
-

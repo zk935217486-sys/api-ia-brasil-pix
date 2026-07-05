@@ -8,6 +8,12 @@ Este repositório mostra como criar chamadas básicas para Claude e Codex usando
 
 Landing page em PT-BR: <https://zk935217486-sys.github.io/api-ia-brasil-pix/>
 
+Guias rápidos:
+
+- [Quanto custa pagar API de IA com cartão internacional no Brasil?](https://zk935217486-sys.github.io/api-ia-brasil-pix/artigos/iof-api-ia-brasil.html)
+- [Como criar um chatbot Claude no terminal em Python](https://zk935217486-sys.github.io/api-ia-brasil-pix/artigos/claude-python-chatbot.html)
+- [Claude ou Codex: qual usar no seu projeto?](https://zk935217486-sys.github.io/api-ia-brasil-pix/artigos/codex-claude-brasil.html)
+
 ## Por que isso existe?
 
 Muita gente no Brasil quer testar IA em produto real, mas trava antes do primeiro `curl`:

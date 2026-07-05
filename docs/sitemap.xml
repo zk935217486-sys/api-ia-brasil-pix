@@ -4,5 +4,16 @@
     <loc>https://zk935217486-sys.github.io/api-ia-brasil-pix/</loc>
     <priority>1.0</priority>
   </url>
+  <url>
+    <loc>https://zk935217486-sys.github.io/api-ia-brasil-pix/artigos/iof-api-ia-brasil.html</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://zk935217486-sys.github.io/api-ia-brasil-pix/artigos/claude-python-chatbot.html</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://zk935217486-sys.github.io/api-ia-brasil-pix/artigos/codex-claude-brasil.html</loc>
+    <priority>0.8</priority>
+  </url>
 </urlset>
-
