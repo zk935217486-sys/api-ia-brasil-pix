@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://zk935217486-sys.github.io/api-ia-brasil-pix/sitemap.xml
+

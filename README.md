@@ -6,6 +6,8 @@ Este repositório mostra como criar chamadas básicas para Claude e Codex usando
 
 > Plataforma citada nos exemplos: [token ai](https://api.8uie.com/home)
 
+Landing page em PT-BR: <https://zk935217486-sys.github.io/api-ia-brasil-pix/>
+
 ## Por que isso existe?
 
 Muita gente no Brasil quer testar IA em produto real, mas trava antes do primeiro `curl`:
@@ -164,6 +166,7 @@ A ideia é reservar créditos de teste para projetos que ajudem a comunidade dev
 ## Links úteis
 
 - Plataforma: <https://api.8uie.com/home>
+- Landing page: <https://zk935217486-sys.github.io/api-ia-brasil-pix/>
 - Palavra-chave: API Codex Brasil
 - Palavra-chave: API Claude Brasil
 - Palavra-chave: comprar token IA com Pix
@@ -173,4 +176,3 @@ A ideia é reservar créditos de teste para projetos que ajudem a comunidade dev
 ## Curtiu?
 
 Deixe uma star no repositório para ajudar outros devs brasileiros a encontrarem este guia.
-
