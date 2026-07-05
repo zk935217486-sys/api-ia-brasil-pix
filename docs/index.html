@@ -66,7 +66,7 @@
       </a>
       <nav aria-label="Navegação principal">
         <a href="#comparacao">Preço</a>
-        <a href="#codigo">Código</a>
+        <a href="#codigo">Vantagens</a>
         <a href="#faq">FAQ</a>
       </nav>
       <a class="header-cta" href="https://api.8uie.com/home">R$5 via suporte</a>
@@ -114,17 +114,14 @@
           </div>
           <div class="receipt">
             <div class="receipt-top">
-              <span>terminal</span>
-              <span>br-prod</span>
+              <span>saldo token ai</span>
+              <span>Pix BRL</span>
             </div>
-            <pre><code>$ curl /v1/messages
-model: claude
-region: BR
-cost_mode: cheaper_tokens
-payment: PIX
-currency: BRL
-trial_credit: R$5
-status: ready</code></pre>
+            <div class="receipt-summary">
+              <div><span>Modelos</span><strong>Codex + Claude</strong></div>
+              <div><span>Custo</span><strong>Até 68% menor</strong></div>
+              <div><span>Teste</span><strong>R$5 via suporte</strong></div>
+            </div>
             <div class="pix-card">
               <span class="pix-label">Saldo para tokens</span>
               <strong>R$ 5,00</strong>
@@ -200,24 +197,40 @@ status: ready</code></pre>
           </article>
           <article>
             <span>3</span>
-            <h3>Chame a API</h3>
-            <p>Copie seu token, rode Python ou JavaScript e acompanhe o consumo de saldo.</p>
+            <h3>Compare o custo</h3>
+            <p>Veja quanto cada fluxo consome em BRL antes de colocar mais saldo.</p>
           </article>
         </div>
-        <div class="code-panel">
-          <div class="code-title">
-            <span>Python</span>
-            <a href="https://github.com/zk935217486-sys/api-ia-brasil-pix">README completo</a>
+        <div class="token-advantage-panel" aria-label="Vantagens do token ai">
+          <div class="advantage-copy">
+            <p class="panel-kicker">Sem expor token. Só saldo e consumo.</p>
+            <h3>Codex e Claude com foco no que pesa no bolso: custo por token.</h3>
+            <p>
+              O token ai foi pensado para dev brasileiro que quer testar, comparar e escalar IA sem susto de cartão
+              internacional. Você recarrega em Real, usa Pix e mede o gasto por tarefa.
+            </p>
+            <div class="advantage-actions">
+              <a class="button primary" href="https://api.8uie.com/home">Pedir R$5 no suporte</a>
+              <a class="button secondary" href="#comparacao">Comparar preço</a>
+            </div>
           </div>
-          <pre><code>from anthropic import Anthropic
-
-client = Anthropic(api_key="SEU_TOKEN")
-msg = client.messages.create(
-    model="claude-sonnet-4-20250514",
-    max_tokens=300,
-    messages=[{"role": "user", "content": "Explique Pix para devs."}],
-)
-print(msg.content[0].text)</code></pre>
+          <div class="advantage-board">
+            <div class="saving-tile codex">
+              <span>Codex</span>
+              <strong>até -68%</strong>
+              <small>em cenários de uso recorrente</small>
+            </div>
+            <div class="saving-tile claude">
+              <span>Claude</span>
+              <strong>até -64%</strong>
+              <small>para chat, resumo e automação</small>
+            </div>
+            <div class="advantage-list">
+              <div><span>Pix</span><strong>Saldo em BRL, sem cartão internacional</strong></div>
+              <div><span>Teste</span><strong>R$5 via suporte para validar antes</strong></div>
+              <div><span>Controle</span><strong>Veja consumo por tarefa, não surpresa na fatura</strong></div>
+            </div>
+          </div>
         </div>
       </section>
 
