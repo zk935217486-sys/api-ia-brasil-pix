@@ -1,8 +1,8 @@
-# [PT-BR] API Codex e Claude no Brasil com Pix
+# [PT-BR] Tokens Codex e Claude baratos no Brasil
 
-🇧🇷 Exemplos simples para devs brasileiros testarem APIs de IA sem depender de cartão internacional.
+🇧🇷 Exemplos simples para devs brasileiros testarem Codex e Claude com menor custo por token, Pix e saldo em Real.
 
-Este repositório mostra como criar chamadas básicas para Claude e Codex usando Python e JavaScript, com foco em quem está no Brasil e quer prototipar rápido, pagando em Real e evitando a dor de cabeça de cartão internacional, IOF no cartão e câmbio imprevisível.
+Este repositório mostra como criar chamadas básicas para Claude e Codex usando Python e JavaScript, com foco em quem está no Brasil e quer reduzir custo de consumo de token. Pix, Real e R$5 grátis ajudam no onboarding, mas o ponto principal é gastar menos por uso.
 
 > Plataforma citada nos exemplos: [token ai](https://api.8uie.com/home)
 
@@ -10,21 +10,24 @@ Landing page em PT-BR: <https://zk935217486-sys.github.io/api-ia-brasil-pix/>
 
 Guias rápidos:
 
-- [Quanto custa pagar API de IA com cartão internacional no Brasil?](https://zk935217486-sys.github.io/api-ia-brasil-pix/artigos/iof-api-ia-brasil.html)
+- [Codex token barato no Brasil: como reduzir custo de uso](https://zk935217486-sys.github.io/api-ia-brasil-pix/artigos/codex-token-barato-brasil.html)
+- [Claude API barato Brasil: teste com saldo em Real](https://zk935217486-sys.github.io/api-ia-brasil-pix/artigos/claude-api-barato-brasil.html)
+- [Compra direta vs token ai: onde está a economia?](https://zk935217486-sys.github.io/api-ia-brasil-pix/artigos/comparar-preco-openai-token-ai.html)
+- [Quanto custa token de IA caro no Brasil?](https://zk935217486-sys.github.io/api-ia-brasil-pix/artigos/iof-api-ia-brasil.html)
 - [Como criar um chatbot Claude no terminal em Python](https://zk935217486-sys.github.io/api-ia-brasil-pix/artigos/claude-python-chatbot.html)
 - [Claude ou Codex: qual usar no seu projeto?](https://zk935217486-sys.github.io/api-ia-brasil-pix/artigos/codex-claude-brasil.html)
 
 ## Por que isso existe?
 
-Muita gente no Brasil quer testar IA em produto real, mas trava antes do primeiro `curl`:
+Muita gente no Brasil quer usar Codex e Claude em produto real, mas o consumo de token começa a pesar rápido:
 
-- precisa de cartão internacional;
-- a cobrança vem em dólar;
-- pode entrar IOF, spread e variação cambial;
-- alguns bancos recusam cobrança recorrente internacional;
-- a latência nem sempre é boa para aplicações usadas no Brasil.
+- revisão de código consome contexto e várias rodadas;
+- chatbot com Claude multiplica mensagens por usuário;
+- análise de documentos usa contexto longo;
+- preço por token vira custo recorrente;
+- cartão internacional, dólar, IOF e spread ainda pioram a conta.
 
-A proposta do [token ai](https://api.8uie.com/home) é reduzir essa fricção: Pix, preço em Real, R$5 de teste grátis, suporte em português via Telegram e endpoint otimizado para uso no Brasil.
+A proposta do [token ai](https://api.8uie.com/home) é vender consumo de tokens Codex e Claude com menor custo por uso para devs brasileiros. Pix, preço em Real, R$5 de teste grátis e suporte em português via Telegram reduzem a fricção de compra.
 
 ## Começando em 2 minutos
 
@@ -117,24 +120,24 @@ node examples/simple_generation.js
 
 ## Comparação de custos
 
-Os valores abaixo são ilustrativos. Confira sempre a alíquota vigente de IOF e as regras do seu banco.
+Os valores abaixo são conceituais. Confira sempre o preço ativo no painel, o modelo usado e seu volume antes de escalar.
 
-| Cenário | Cartão internacional | token ai com Pix |
+| Cenário | Compra direta | token ai |
 |---|---:|---:|
-| Moeda | USD | BRL |
+| Foco | Preço oficial + cobrança internacional | Menor custo por token |
+| Moeda | Geralmente USD | BRL |
 | Pagamento | Cartão internacional | Pix |
-| IOF no cartão | Pode incidir | Não depende de cartão internacional |
-| Câmbio e spread | Sim | Não |
+| Controle | Fatura depois | Saldo antes de usar |
 | Teste grátis | Depende da plataforma | R$5 grátis |
 | Suporte | Global/genérico | Português via TG |
 
 ## Quando faz sentido usar?
 
-- Você quer testar API Codex Brasil sem cartão internacional.
-- Você quer prototipar com API Claude Brasil pagando com Pix.
-- Você quer comprar token IA com Pix para um projeto pequeno.
-- Você quer reduzir surpresa de fatura causada por câmbio, spread e IOF.
-- Você precisa de uma alternativa pagamento API IA com onboarding simples.
+- Você procura Codex token barato para revisar código sem estourar orçamento.
+- Você quer Claude API barato Brasil para chatbot, resumo ou análise.
+- Você quer comprar token IA com Pix e saldo em Real.
+- Você quer comparar custo por tarefa antes de escalar.
+- Você precisa de uma alternativa barata para API de IA com onboarding simples.
 
 ## FAQ
 
@@ -148,11 +151,11 @@ Use primeiro o crédito de teste, valide latência, limites, custo e estabilidad
 
 ### Preciso de cartão internacional?
 
-Na proposta do [token ai](https://api.8uie.com/home), não. O fluxo é Pix e preço em Real.
+Na proposta do [token ai](https://api.8uie.com/home), não. O fluxo é Pix, saldo em Real e consumo de tokens.
 
 ### Tem teste grátis?
 
-Sim. A plataforma oferece R$5 de token de teste grátis para validar antes de colocar crédito.
+Sim. A plataforma oferece R$5 de token de teste grátis para validar custo, qualidade e latência antes de colocar crédito.
 
 ### E a latência?
 
@@ -175,7 +178,8 @@ Issue para projetos open source:
 
 ## Conteúdo para compartilhar
 
-- [Post LinkedIn sobre IOF e cartão internacional](content/linkedIn-post-iof.md)
+- [Post LinkedIn sobre custo mensal de token](content/linkedIn-post-iof.md)
+- [Post LinkedIn sobre Codex e Claude token barato](content/linkedIn-post-token-barato.md)
 - [Post LinkedIn sobre Claude API com Python](content/linkedIn-post-claude-python.md)
 - [Fila de publicação PT-BR](content/publication-queue.md)
 
@@ -183,11 +187,14 @@ Issue para projetos open source:
 
 - Plataforma: <https://api.8uie.com/home>
 - Landing page: <https://zk935217486-sys.github.io/api-ia-brasil-pix/>
-- Palavra-chave: API Codex Brasil
-- Palavra-chave: API Claude Brasil
+- Palavra-chave: Codex token barato
+- Palavra-chave: Claude API barato Brasil
+- Palavra-chave: token IA barato Brasil
+- Palavra-chave: alternativa barata OpenAI API
+- Palavra-chave: comprar token Claude barato
+- Palavra-chave: comprar token Codex com Pix
 - Palavra-chave: comprar token IA com Pix
-- Palavra-chave: sem cartão internacional
-- Palavra-chave: token de teste grátis
+- Palavra-chave: saldo API IA com Pix
 
 ## Curtiu?
 

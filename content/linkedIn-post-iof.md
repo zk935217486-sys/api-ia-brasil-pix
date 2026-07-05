@@ -1,29 +1,28 @@
-# LinkedIn post - IOF e cartão internacional
+# LinkedIn post - token caro e custo mensal
 
-Comprar token de API com cartão internacional parece simples... até a fatura fechar.
+O problema de usar Codex e Claude em produto real não é só integrar a API.
 
-Se você é dev no Brasil e usa API de IA em dólar, o custo final raramente é só o preço da API.
+É o custo por token quando o uso deixa de ser teste e vira rotina.
 
-Tem IOF, spread do banco, variação cambial e, às vezes, cobrança recusada por antifraude.
+Revisão de código, chatbot, resumo de documento, análise de issue... tudo parece barato em uma chamada isolada. Mas multiplica por dia, por usuário e por contexto.
 
 Exemplo rápido:
 
 ```txt
-Gasto mensal com API: R$ 300
-Gasto anual: R$ 3.600
-
-Custo extra = IOF vigente + spread + variação cambial
+40 revisões de código/dia
+12k tokens por revisão
+22 dias úteis
+= 10.560.000 tokens/mês
 ```
 
-Mesmo uma diferença pequena vira dinheiro real quando o uso passa de protótipo para produto. Em um time gastando R$ 1.500/mês, qualquer 3% a 6% de custo extra já vira centenas de reais por ano.
+Nesse ponto, qualquer diferença de preço por token vira dinheiro real.
 
-E o pior: esse custo aparece fora do código. Você só descobre na fatura.
+IOF, spread e dólar ainda pioram a conta, mas o centro do problema é: quanto custa rodar Codex/Claude todo dia?
 
-Para quem está testando Codex, Claude ou outros modelos, faz mais sentido começar com pagamento local, valor em Real e crédito pequeno para validar.
+É por isso que estou usando uma abordagem com saldo em BRL e token mais barato para testar antes de escalar.
 
-Tenho usado o token ai para isso: Pix, preço em BRL, R$5 grátis para testar e sem depender de cartão internacional.
+No token ai dá para comprar consumo de Codex e Claude com Pix, testar com R$5 grátis e comparar o custo real no seu próprio fluxo.
 
-Link: https://zk935217486-sys.github.io/api-ia-brasil-pix/
+Link: https://zk935217486-sys.github.io/api-ia-brasil-pix/artigos/codex-token-barato-brasil.html
 
-#APICodexBrasil #APIClaudeBrasil #Pix #SemCartaoInternacional #DevBrasil #IAParaDevs #SemIOF
-
+#Codex #ClaudeAPI #TokenIA #DevBrasil #IAParaDevs #APICodexBrasil #APIClaudeBrasil #Pix

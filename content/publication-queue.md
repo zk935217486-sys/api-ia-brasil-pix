@@ -6,15 +6,15 @@
 
 Canal: LinkedIn
 
-Post: `content/linkedIn-post-iof.md`
+Post: `content/linkedIn-post-token-barato.md`
 
 Link principal:
 
-https://zk935217486-sys.github.io/api-ia-brasil-pix/artigos/iof-api-ia-brasil.html
+https://zk935217486-sys.github.io/api-ia-brasil-pix/artigos/comparar-preco-openai-token-ai.html
 
 Objetivo:
 
-Atrair devs procurando sem IOF, cartão internacional e Pix para API de IA.
+Atrair devs procurando Codex token barato, Claude API barato e alternativa barata para API de IA.
 
 ### Dia 2
 
@@ -22,9 +22,9 @@ Canal: GitHub comunidades / Telegram / Discord
 
 Resposta curta:
 
-Se você só quer testar API de IA sem cartão internacional, tenta começar com Pix em Real e crédito pequeno. Eu deixei um guia PT-BR aqui:
+Se você está achando Codex ou Claude caro para rodar todo dia, tenta comparar pelo custo por tarefa: revisão de código, conversa, resumo ou lote. Eu deixei um guia PT-BR aqui:
 
-https://github.com/zk935217486-sys/api-ia-brasil-pix
+https://zk935217486-sys.github.io/api-ia-brasil-pix/artigos/codex-token-barato-brasil.html
 
 ### Dia 3
 
@@ -38,7 +38,7 @@ https://zk935217486-sys.github.io/api-ia-brasil-pix/artigos/claude-python-chatbo
 
 Objetivo:
 
-Atrair devs Python procurando API Claude Brasil.
+Atrair devs Python procurando Claude API barato Brasil.
 
 ### Dia 4
 
@@ -46,7 +46,7 @@ Canal: Telegram / Discord
 
 Resposta curta:
 
-Claude encaixa bem para texto, análise e contexto longo. Codex encaixa melhor para tarefas de código, revisão e refactor. Fiz um resumo prático aqui:
+Claude encaixa bem para texto, análise e contexto longo. Codex encaixa melhor para tarefas de código, revisão e refactor. Mas compara pelo custo por token e por tarefa, não só pelo nome do modelo:
 
 https://zk935217486-sys.github.io/api-ia-brasil-pix/artigos/codex-claude-brasil.html
 
@@ -63,4 +63,3 @@ https://github.com/zk935217486-sys/api-ia-brasil-pix/issues/1
 Objetivo:
 
 Gerar sinais públicos de comunidade e backlinks orgânicos.
-
