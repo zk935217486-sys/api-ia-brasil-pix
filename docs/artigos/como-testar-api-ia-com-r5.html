@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Como testar API de IA com R$5 | token ai</title>
+    <meta
+      name="description"
+      content="Passo a passo para testar Claude ou Codex com R$5 via suporte, Pix, saldo em Real e comparação de custo por tarefa."
+    />
+    <link rel="canonical" href="https://zk935217486-sys.github.io/api-ia-brasil-pix/artigos/como-testar-api-ia-com-r5.html" />
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="../index.html" aria-label="Tokens Codex + Claude Brasil">
+        <span class="model-brand" aria-hidden="true">
+          <span class="model-chip model-chip-claude"><img src="../assets/logo-claude-icon.png" alt="" /></span>
+          <span class="model-chip model-chip-codex"><img src="../assets/logo-codex-icon.png" alt="" /></span>
+        </span>
+        <span class="brand-copy"><strong>Tokens Codex + Claude</strong><small>Brasil · Pix · BRL</small></span>
+        <span class="br-flag" aria-hidden="true"></span>
+      </a>
+      <nav aria-label="Navegação principal">
+        <a href="../index.html#comparacao">Preço</a>
+        <a href="../index.html#codigo">Código</a>
+        <a href="../index.html#faq">FAQ</a>
+      </nav>
+      <a class="header-cta" href="https://api.8uie.com/home">R$5 via suporte</a>
+    </header>
+    <main class="article-page">
+      <article>
+        <p class="eyebrow">Teste com R$5</p>
+        <h1>Como testar API de IA com R$5 antes de colocar saldo maior</h1>
+        <p class="hero-text">
+          Antes de pagar por volume, rode um teste pequeno. O objetivo é descobrir custo por tarefa, latência percebida
+          e se Claude ou Codex encaixam no seu produto.
+        </p>
+
+        <h2>Passo a passo</h2>
+        <ol>
+          <li>Crie sua conta no painel do token ai.</li>
+          <li>Peça R$5 no suporte.</li>
+          <li>Escolha um fluxo real: chat, resumo, revisão de código ou automação.</li>
+          <li>Rode entre 5 e 20 chamadas.</li>
+          <li>Anote tokens usados, tempo de resposta e custo final.</li>
+        </ol>
+
+        <pre><code>testes = [
+  "resumir documento",
+  "revisar diff",
+  "gerar resposta de suporte",
+]
+
+for teste in testes:
+    print("medir custo:", teste)</code></pre>
+
+        <h2>O que não fazer</h2>
+        <p>
+          Não use só um prompt de "hello world". Ele não representa seu produto. Teste com payload parecido com o que
+          seus usuários realmente vão enviar.
+        </p>
+
+        <h2>Por que pedir pelo suporte?</h2>
+        <p>
+          O crédito de R$5 serve para validar usuários reais e evitar abuso automático. Depois do teste, você pode
+          recarregar saldo em BRL via Pix.
+        </p>
+
+        <a class="button primary" href="https://api.8uie.com/home">Pedir R$5 no suporte</a>
+      </article>
+    </main>
+  </body>
+</html>
