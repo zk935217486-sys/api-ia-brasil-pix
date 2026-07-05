@@ -169,6 +169,16 @@ Se você mantém um projeto open source brasileiro que usa IA em documentação,
 
 A ideia é reservar créditos de teste para projetos que ajudem a comunidade dev brasileira.
 
+Issue para projetos open source:
+
+<https://github.com/zk935217486-sys/api-ia-brasil-pix/issues/1>
+
+## Conteúdo para compartilhar
+
+- [Post LinkedIn sobre IOF e cartão internacional](content/linkedIn-post-iof.md)
+- [Post LinkedIn sobre Claude API com Python](content/linkedIn-post-claude-python.md)
+- [Fila de publicação PT-BR](content/publication-queue.md)
+
 ## Links úteis
 
 - Plataforma: <https://api.8uie.com/home>

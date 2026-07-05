@@ -1,0 +1,50 @@
+name: Projeto open source brasileiro
+description: Solicite crédito de teste para um projeto open source brasileiro que usa IA.
+title: "[Open Source] "
+labels:
+  - open-source
+  - credito-teste
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Obrigado por manter um projeto open source no Brasil. Use este formulário para explicar como o crédito de teste ajudaria seu projeto.
+  - type: input
+    id: projeto
+    attributes:
+      label: Link do projeto
+      description: Cole o link do repositório, site ou documentação pública.
+      placeholder: https://github.com/usuario/projeto
+    validations:
+      required: true
+  - type: textarea
+    id: caso
+    attributes:
+      label: Caso de uso com IA
+      description: Explique onde Claude, Codex ou outra API de IA entraria no projeto.
+      placeholder: Exemplo: gerar documentação, revisar PRs, criar chatbot de suporte, automatizar testes.
+    validations:
+      required: true
+  - type: textarea
+    id: impacto
+    attributes:
+      label: Impacto para a comunidade
+      description: Quem se beneficia se o projeto receber crédito de teste?
+    validations:
+      required: true
+  - type: input
+    id: volume
+    attributes:
+      label: Volume esperado
+      description: Estimativa simples de chamadas, usuários ou testes.
+      placeholder: Exemplo: 200 chamadas no primeiro mês.
+  - type: checkboxes
+    id: confirmacao
+    attributes:
+      label: Confirmações
+      options:
+        - label: O projeto é público ou tem documentação pública.
+          required: true
+        - label: O crédito será usado para desenvolvimento, educação ou manutenção open source.
+          required: true
+
