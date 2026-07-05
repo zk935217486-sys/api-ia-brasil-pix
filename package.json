@@ -1,0 +1,22 @@
+{
+  "name": "api-ia-brasil-pix-exemplos",
+  "version": "1.0.0",
+  "description": "Exemplos em PT-BR para usar Claude e Codex API no Brasil com Pix, Real e token de teste gratis.",
+  "type": "module",
+  "scripts": {
+    "example:js": "node examples/simple_generation.js"
+  },
+  "keywords": [
+    "API Codex Brasil",
+    "API Claude Brasil",
+    "comprar token IA com Pix",
+    "sem cartao internacional",
+    "sem IOF",
+    "token de teste gratis",
+    "endpoint otimizado Brasil"
+  ],
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.56.0"
+  }
+}
+
