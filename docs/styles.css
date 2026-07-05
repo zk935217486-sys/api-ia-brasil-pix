@@ -173,6 +173,39 @@ footer {
   font-weight: 800;
 }
 
+.br-flag {
+  position: relative;
+  display: inline-block;
+  width: 30px;
+  height: 20px;
+  overflow: hidden;
+  background: #159447;
+  border: 1px solid rgba(22, 16, 25, 0.18);
+  border-radius: 3px;
+  box-shadow: 0 8px 16px rgba(22, 16, 25, 0.10);
+}
+
+.br-flag::before {
+  position: absolute;
+  inset: 50% auto auto 50%;
+  width: 17px;
+  height: 17px;
+  background: #ffdf3b;
+  transform: translate(-50%, -50%) rotate(45deg);
+  content: "";
+}
+
+.br-flag::after {
+  position: absolute;
+  inset: 50% auto auto 50%;
+  width: 8px;
+  height: 8px;
+  background: #2246a3;
+  border-radius: 999px;
+  transform: translate(-50%, -50%);
+  content: "";
+}
+
 nav {
   gap: 2px;
   padding: 5px;
@@ -1098,6 +1131,11 @@ footer a {
     box-shadow:
       4px 4px 0 var(--pix),
       0 12px 24px rgba(22, 16, 25, 0.10);
+  }
+
+  .br-flag {
+    width: 26px;
+    height: 18px;
   }
 
   .header-cta {
