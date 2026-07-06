@@ -1,4 +1,4 @@
-# Fila de publicação PT-BR
+﻿# Fila de publicação PT-BR
 
 ## Semana 1
 
@@ -63,3 +63,4 @@ https://github.com/zk935217486-sys/api-ia-brasil-pix/issues/1
 Objetivo:
 
 Gerar sinais públicos de comunidade e backlinks orgânicos.
+
