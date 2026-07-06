@@ -1,4 +1,4 @@
-# LinkedIn post - Claude API barato com Python
+﻿# LinkedIn post - Claude API barato com Python
 
 Quer montar um chatbot simples no terminal usando Claude API em Python sem gastar token à toa?
 
@@ -41,8 +41,9 @@ pip install anthropic
 
 Para dev brasileiro, muitas vezes o problema não é integrar a API. É manter Claude rodando todo dia sem o custo por token virar susto.
 
-No token ai, dá para testar Claude com R$5 grátis, pagar via Pix, usar saldo em Real e comparar o custo real antes de escalar.
+No token ai, dá para testar Claude com R$5 via suporte, pagar via Pix, usar saldo em Real e comparar o custo real antes de escalar.
 
 Link: https://zk935217486-sys.github.io/api-ia-brasil-pix/artigos/claude-python-chatbot.html
 
 #ClaudeAPI #PythonBrasil #ClaudeAPIBrasil #TokenIA #DevBrasil #Pix #IAParaDevs
+
