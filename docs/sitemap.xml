@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://zk935217486-sys.github.io/api-ia-brasil-pix/</loc>
@@ -10,6 +10,22 @@
   </url>
   <url>
     <loc>https://zk935217486-sys.github.io/api-ia-brasil-pix/artigos/claude-api-barato-brasil.html</loc>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://zk935217486-sys.github.io/api-ia-brasil-pix/artigos/comprar-token-ia-com-pix.html</loc>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://zk935217486-sys.github.io/api-ia-brasil-pix/artigos/api-ia-barata-brasil.html</loc>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://zk935217486-sys.github.io/api-ia-brasil-pix/artigos/claude-token-barato-brasil.html</loc>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://zk935217486-sys.github.io/api-ia-brasil-pix/artigos/codex-token-com-pix.html</loc>
     <priority>0.9</priority>
   </url>
   <url>
@@ -49,3 +65,4 @@
     <priority>0.8</priority>
   </url>
 </urlset>
+
