@@ -1,4 +1,4 @@
-# Fila de publicação orgânica PT-BR - 14 dias
+﻿# Fila de publicação orgânica PT-BR - 14 dias
 
 Objetivo: atrair devs brasileiros procurando tokens Codex e Claude mais baratos, Pix, BRL, sem cartão internacional e teste de R$5 via suporte.
 
@@ -329,3 +329,4 @@ https://zk935217486-sys.github.io/api-ia-brasil-pix/
 Se você usa IA em código, chat, resumo ou automação, o melhor teste é medir custo por tarefa no seu próprio fluxo.
 
 #ClaudeAPI #Codex #IA #Brasil #Pix #APIs #DevBR
+
