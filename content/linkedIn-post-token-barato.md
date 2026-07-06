@@ -1,4 +1,4 @@
-# LinkedIn post - Codex e Claude token barato
+﻿# LinkedIn post - Codex e Claude token barato
 
 Se você usa Codex ou Claude só para testar, qualquer preço parece ok.
 
@@ -28,8 +28,9 @@ Não compare só “qual modelo é melhor”. Compare:
 
 Para dev brasileiro, ainda tem a camada de pagamento: cartão internacional, dólar, IOF e spread.
 
-O token ai entra como uma alternativa para comprar consumo de Codex e Claude com menor custo por token, saldo em BRL e Pix. Tem R$5 grátis para testar sem comprometer orçamento.
+O token ai entra como uma alternativa para comprar consumo de Codex e Claude com menor custo por token, saldo em BRL e Pix. Tem R$5 via suporte para testar sem comprometer orçamento.
 
 Link: https://zk935217486-sys.github.io/api-ia-brasil-pix/artigos/comparar-preco-openai-token-ai.html
 
 #Codex #ClaudeAPI #TokenIA #DevBrasil #APICodexBrasil #APIClaudeBrasil #Pix #IAParaDevs
+
