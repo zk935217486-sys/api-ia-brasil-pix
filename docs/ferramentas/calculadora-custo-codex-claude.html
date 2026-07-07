@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Calculadora de custo Codex e Claude em BRL | token ai</title>
+    <meta
+      name="description"
+      content="Calculadora gratuita para comparar custo mensal de tokens Codex e Claude em BRL, com IOF, spread, câmbio, Pix e token ai."
+    />
+    <meta
+      name="keywords"
+      content="calculadora custo Claude, calculadora custo Codex, custo token IA BRL, comparar preço API IA, Codex Claude Pix"
+    />
+    <link rel="canonical" href="https://zk935217486-sys.github.io/api-ia-brasil-pix/ferramentas/calculadora-custo-codex-claude.html" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800;900&family=JetBrains+Mono:wght@500;700;800&family=Space+Grotesk:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZYXXBG3E59"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-ZYXXBG3E59');
+      document.addEventListener('click', function (event) {
+        var link = event.target.closest('a[href]');
+        if (!link || typeof gtag !== 'function') return;
+        if (link.href.indexOf('api.8uie.com/home') !== -1) {
+          gtag('event', 'support_cta_click', {
+            event_category: 'conversion',
+            event_label: link.textContent.trim()
+          });
+        }
+      });
+    </script>    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="../index.html" aria-label="Tokens Codex + Claude Brasil">
+        <span class="model-brand" aria-hidden="true">
+          <span class="model-chip model-chip-claude"><img src="../assets/logo-claude-icon.png" alt="" /></span>
+          <span class="model-chip model-chip-codex"><img src="../assets/logo-codex-icon.png" alt="" /></span>
+        </span>
+        <span class="brand-copy"><strong>Tokens Codex + Claude</strong><small>Brasil · Pix · BRL</small></span>
+        <span class="br-flag" aria-hidden="true"></span>
+      </a>
+      <nav aria-label="Navegação principal">
+        <a href="../index.html#comparacao">Preço</a>
+        <a href="../index.html#ferramentas">Calculadora</a>
+        <a href="../index.html#faq">FAQ</a>
+      </nav>
+      <a class="header-cta" href="https://api.8uie.com/home">R$5 via suporte</a>
+    </header>
+
+    <main class="calculator-page">
+      <section class="calculator-hero">
+        <div>
+          <p class="eyebrow">Ferramenta gratuita</p>
+          <h1>Calculadora de custo Codex e Claude em BRL.</h1>
+          <p class="hero-text">
+            Compare compra internacional com cartão contra saldo em Real no token ai. Ajuste tokens, câmbio, IOF,
+            spread e preço por milhão de tokens para medir custo por tarefa.
+          </p>
+        </div>
+        <div class="calculator-ledger" aria-label="Resumo da calculadora">
+          <span>BRL</span>
+          <strong id="heroSavings">R$ 0</strong>
+          <small>economia mensal estimada</small>
+        </div>
+      </section>
+
+      <section class="calculator-shell" aria-label="Calculadora de custo de token">
+        <form class="calculator-form" id="costForm">
+          <div class="preset-row" aria-label="Cenários prontos">
+            <button type="button" data-preset="codex">Code review Codex</button>
+            <button type="button" data-preset="chatbot">Chatbot Claude</button>
+            <button type="button" data-preset="resumo">Resumo em lote</button>
+          </div>
+
+          <div class="field-grid">
+            <label>
+              Tarefas por mês
+              <input id="tasks" type="number" min="1" step="1" value="120" />
+            </label>
+            <label>
+              Tokens de entrada por tarefa
+              <input id="inputTokens" type="number" min="0" step="100" value="8000" />
+            </label>
+            <label>
+              Tokens de saída por tarefa
+              <input id="outputTokens" type="number" min="0" step="100" value="1200" />
+            </label>
+            <label>
+              Câmbio USD → BRL
+              <input id="fx" type="number" min="1" step="0.01" value="5.50" />
+            </label>
+            <label>
+              IOF do cartão (%)
+              <input id="iof" type="number" min="0" step="0.01" value="6.38" />
+            </label>
+            <label>
+              Spread do cartão (%)
+              <input id="spread" type="number" min="0" step="0.1" value="4.0" />
+            </label>
+            <label>
+              Oficial input (USD / 1M)
+              <input id="officialInput" type="number" min="0" step="0.01" value="3.00" />
+            </label>
+            <label>
+              Oficial output (USD / 1M)
+              <input id="officialOutput" type="number" min="0" step="0.01" value="15.00" />
+            </label>
+            <label>
+              token ai input (BRL / 1M)
+              <input id="tokenAiInput" type="number" min="0" step="0.01" value="5.20" />
+            </label>
+            <label>
+              token ai output (BRL / 1M)
+              <input id="tokenAiOutput" type="number" min="0" step="0.01" value="23.00" />
+            </label>
+          </div>
+        </form>
+
+        <aside class="calculator-results" aria-live="polite">
+          <div class="result-primary">
+            <span>Economia estimada</span>
+            <strong id="savings">R$ 0,00</strong>
+            <small id="savingsPct">0% menor</small>
+          </div>
+          <div class="result-grid">
+            <div><span>Compra internacional</span><strong id="officialTotal">R$ 0,00</strong></div>
+            <div><span>token ai Pix</span><strong id="tokenAiTotal">R$ 0,00</strong></div>
+            <div><span>Tokens/mês</span><strong id="tokensMonth">0</strong></div>
+            <div><span>Custo por tarefa</span><strong id="taskCost">R$ 0,00</strong></div>
+          </div>
+          <p id="explainText">
+            Os valores são estimativas. Use os preços reais do painel e o consumo do seu próprio fluxo antes de escalar.
+          </p>
+          <div class="calculator-actions">
+            <a class="button primary" href="https://api.8uie.com/home">Pedir R$5 no suporte</a>
+            <a class="button secondary" href="https://github.com/zk935217486-sys/claude-codex-cost-calculator-brasil">Ver ferramenta no GitHub</a>
+          </div>
+        </aside>
+      </section>
+    </main>
+
+    <footer>
+      <span>token ai - tokens de Codex e Claude mais baratos para devs brasileiros.</span>
+      <a href="../index.html">Página principal</a>
+      <a href="https://api.8uie.com/home">Plataforma</a>
+    </footer>
+
+    <script>
+      const fmtBRL = new Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL' });
+      const fmtInt = new Intl.NumberFormat('pt-BR');
+      const fields = [
+        'tasks', 'inputTokens', 'outputTokens', 'fx', 'iof', 'spread',
+        'officialInput', 'officialOutput', 'tokenAiInput', 'tokenAiOutput'
+      ];
+      const presets = {
+        codex: { tasks: 120, inputTokens: 8000, outputTokens: 1200, officialInput: 3, officialOutput: 15, tokenAiInput: 5.2, tokenAiOutput: 23 },
+        chatbot: { tasks: 900, inputTokens: 2200, outputTokens: 700, officialInput: 3, officialOutput: 15, tokenAiInput: 5.2, tokenAiOutput: 23 },
+        resumo: { tasks: 240, inputTokens: 12000, outputTokens: 900, officialInput: 3, officialOutput: 15, tokenAiInput: 5.2, tokenAiOutput: 23 }
+      };
+
+      function number(id) {
+        return Number(document.getElementById(id).value || 0);
+      }
+
+      function calculate() {
+        const tasks = number('tasks');
+        const inputTokens = number('inputTokens');
+        const outputTokens = number('outputTokens');
+        const fx = number('fx');
+        const internationalTax = 1 + ((number('iof') + number('spread')) / 100);
+        const officialUsd =
+          ((tasks * inputTokens) / 1000000) * number('officialInput') +
+          ((tasks * outputTokens) / 1000000) * number('officialOutput');
+        const officialBRL = officialUsd * fx * internationalTax;
+        const tokenAiBRL =
+          ((tasks * inputTokens) / 1000000) * number('tokenAiInput') +
+          ((tasks * outputTokens) / 1000000) * number('tokenAiOutput');
+        const savings = Math.max(0, officialBRL - tokenAiBRL);
+        const pct = officialBRL > 0 ? Math.round((savings / officialBRL) * 100) : 0;
+        const tokensMonth = tasks * (inputTokens + outputTokens);
+        const taskCost = tasks > 0 ? tokenAiBRL / tasks : 0;
+
+        document.getElementById('officialTotal').textContent = fmtBRL.format(officialBRL);
+        document.getElementById('tokenAiTotal').textContent = fmtBRL.format(tokenAiBRL);
+        document.getElementById('savings').textContent = fmtBRL.format(savings);
+        document.getElementById('heroSavings').textContent = fmtBRL.format(savings);
+        document.getElementById('savingsPct').textContent = `${pct}% menor`;
+        document.getElementById('tokensMonth').textContent = fmtInt.format(tokensMonth);
+        document.getElementById('taskCost').textContent = fmtBRL.format(taskCost);
+      }
+
+      fields.forEach((id) => document.getElementById(id).addEventListener('input', calculate));
+      document.querySelectorAll('[data-preset]').forEach((button) => {
+        button.addEventListener('click', () => {
+          const preset = presets[button.dataset.preset];
+          Object.keys(preset).forEach((key) => { document.getElementById(key).value = preset[key]; });
+          calculate();
+        });
+      });
+      calculate();
+    </script>
+  </body>
+</html>
