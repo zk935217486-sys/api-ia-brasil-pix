@@ -66,26 +66,62 @@
       <a class="header-cta" href="https://api.8uie.com/home">R$5 via suporte</a>
     </header>
 
-    <main class="calculator-page">
-      <section class="calculator-hero">
-        <div>
+    <main class="calculator-page partner-page">
+      <section class="partner-hero">
+        <div class="partner-hero-copy">
           <p class="eyebrow">Ferramenta para parceiros</p>
-          <h1>Calcule quanto sua audiência pode render em comissão.</h1>
+          <h1>Mostre para sua comunidade quanto indicar Codex e Claude pode render.</h1>
           <p class="hero-text">
-            Se você tem grupo, canal, comunidade, newsletter ou audiência dev, esta página ajuda a estimar o potencial
-            da parceria do token ai. A comissão é de 20% sobre convites válidos que realmente entram no fluxo:
-            cadastro, tutorial e contato com o suporte TG para a experiência inicial.
+            Uma página feita para admin de Telegram, Discord, creator técnico e comunidade dev no Brasil. Primeiro ela
+            calcula o potencial da parceria. Depois entrega o texto pronto para compartilhar sem parecer anúncio seco.
           </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#calculadora">Calcular minha comissão</a>
+            <a class="button secondary" href="#copiar">Copiar texto para divulgar</a>
+          </div>
         </div>
-        <div class="calculator-ledger" aria-label="Resumo da comissão estimada">
-          <span>COMISSÃO</span>
-          <strong id="heroCommission">R$ 0</strong>
-          <small>estimativa mensal do parceiro</small>
+
+        <aside class="creator-snapshot" aria-label="Exemplo de comissão para uma comunidade dev">
+          <span>Exemplo realista</span>
+          <strong>comunidade com 1.000 devs</strong>
+          <div class="snapshot-grid">
+            <div><small>Convites/mês</small><b>80</b></div>
+            <div><small>Válidos</small><b>35%</b></div>
+            <div><small>Recarga média</small><b>R$220</b></div>
+            <div><small>Comissão</small><b>20%</b></div>
+          </div>
+          <p>Simule abaixo com o tamanho real da sua audiência.</p>
+        </aside>
+      </section>
+
+      <section class="partner-fit">
+        <div class="section-heading">
+          <p class="eyebrow">Para quem serve</p>
+          <h2>Funciona melhor onde já existe conversa técnica.</h2>
+        </div>
+        <div class="partner-grid">
+          <article>
+            <strong>Admin de Telegram ou Discord</strong>
+            <p>Quando alguém pergunta sobre custo de API, você manda a calculadora antes do link da plataforma.</p>
+          </article>
+          <article>
+            <strong>Creator técnico</strong>
+            <p>Post, vídeo curto ou thread comparando custo em BRL gera conversa sem depender de pitch agressivo.</p>
+          </article>
+          <article>
+            <strong>Comunidade local</strong>
+            <p>Meetups, grupos de startup e hubs dev reagem melhor a Pix, BRL e suporte em português.</p>
+          </article>
         </div>
       </section>
 
-      <section class="calculator-shell" aria-label="Calculadora de comissão para parceiros">
-        <form class="calculator-form" id="partnerForm">
+      <section class="calculator-shell" id="calculadora" aria-label="Calculadora de comissão para parceiros">
+        <form class="calculator-form partner-form" id="partnerForm">
+          <div class="section-heading compact-heading">
+            <p class="eyebrow">Simulação rápida</p>
+            <h2>Troque os números pelo seu público.</h2>
+          </div>
+
           <div class="preset-row" aria-label="Perfis prontos">
             <button type="button" data-preset="grupo">Grupo pequeno</button>
             <button type="button" data-preset="creator">Creator técnico</button>
@@ -95,15 +131,15 @@
           <div class="field-grid">
             <label>
               Novos convidados por mês
-              <input id="invites" type="number" min="0" step="1" value="25" />
+              <input id="invites" type="number" min="0" step="1" value="80" />
             </label>
             <label>
               Taxa que vira convite válido (%)
-              <input id="validRate" type="number" min="0" max="100" step="1" value="40" />
+              <input id="validRate" type="number" min="0" max="100" step="1" value="35" />
             </label>
             <label>
               Recarga média mensal por usuário (BRL)
-              <input id="avgTopup" type="number" min="0" step="1" value="180" />
+              <input id="avgTopup" type="number" min="0" step="1" value="220" />
             </label>
             <label>
               Comissão do parceiro (%)
@@ -111,7 +147,7 @@
             </label>
             <label>
               Retenção para o mês seguinte (%)
-              <input id="retention" type="number" min="0" max="100" step="1" value="65" />
+              <input id="retention" type="number" min="0" max="100" step="1" value="70" />
             </label>
             <label>
               Meses ativos considerados
@@ -120,11 +156,11 @@
           </div>
 
           <p class="partner-note">
-            Use valores conservadores. O objetivo aqui é entender ordem de grandeza, não prometer faturamento.
+            Use valores conservadores. Esta estimativa mostra ordem de grandeza, não promessa de faturamento.
           </p>
         </form>
 
-        <aside class="calculator-results" aria-live="polite">
+        <aside class="calculator-results partner-results" aria-live="polite">
           <div class="result-primary">
             <span>Comissão mensal estimada</span>
             <strong id="commissionMonth">R$ 0,00</strong>
@@ -132,43 +168,72 @@
           </div>
           <div class="result-grid">
             <div><span>Usuários válidos/mês</span><strong id="validUsers">0</strong></div>
-            <div><span>GMV mensal estimado</span><strong id="gmvMonth">R$ 0,00</strong></div>
-            <div><span>Comissão em 6 meses</span><strong id="commissionPeriod">R$ 0,00</strong></div>
+            <div><span>Volume mensal estimado</span><strong id="gmvMonth">R$ 0,00</strong></div>
+            <div><span>Comissão no período</span><strong id="commissionPeriod">R$ 0,00</strong></div>
             <div><span>Base ativa ao final</span><strong id="activeBase">0</strong></div>
           </div>
-          <p id="partnerExplain">
-            A parceria funciona melhor quando você compartilha primeiro uma ferramenta útil, como a calculadora de custo,
-            e não só um link seco da plataforma.
-          </p>
           <div class="calculator-actions">
             <a class="button primary" href="https://api.8uie.com/home">Falar com suporte sobre parceria</a>
-            <a class="button secondary" href="../artigos/parceria-comunidades-dev-brasil.html">Ver proposta para comunidades</a>
-            <a class="button secondary" href="./calculadora-custo-codex-claude.html">Abrir calculadora de custo</a>
+            <a class="button secondary" href="../artigos/parceria-comunidades-dev-brasil.html">Ver proposta completa</a>
           </div>
         </aside>
       </section>
 
-      <section class="metrics">
+      <section class="partner-proof">
         <div class="section-heading">
-          <p class="eyebrow">Onde isso funciona melhor</p>
-          <h2>Parceria boa nasce de utilidade técnica.</h2>
+          <p class="eyebrow">Fluxo válido</p>
+          <h2>A indicação não é clique vazio.</h2>
           <p>
-            O melhor parceiro não é quem joga link em todo lugar. É quem já conversa com devs que sofrem com custo de
-            Codex e Claude, querem pagar em Pix e precisam controlar gasto em BRL.
+            Para proteger o parceiro e a plataforma, a indicação precisa virar uso real. O novo usuário cria conta,
+            segue o tutorial ou download necessário e chama o suporte TG para receber a experiência inicial.
           </p>
         </div>
-        <div class="partner-grid">
+        <div class="referral-steps">
+          <article><span>1</span><strong>Cadastro</strong><p>O novo dev entra no token ai e cria a conta.</p></article>
+          <article><span>2</span><strong>Configuração</strong><p>Ele segue o tutorial para testar Codex ou Claude no próprio fluxo.</p></article>
+          <article><span>20%</span><strong>Comissão</strong><p>Convites válidos geram 20% de comissão para quem indicou.</p></article>
+        </div>
+      </section>
+
+      <section class="copy-lab" id="copiar">
+        <div class="section-heading">
+          <p class="eyebrow">Pronto para divulgar</p>
+          <h2>Copie um texto e mande onde sua comunidade já conversa.</h2>
+        </div>
+        <div class="copy-grid">
           <article>
-            <strong>Telegram e Discord</strong>
-            <p>Responda dúvida de custo com a calculadora e só depois apresente o token ai como sua solução.</p>
+            <div class="copy-top">
+              <strong>LinkedIn</strong>
+              <button type="button" data-copy-target="linkedinCopy">Copiar</button>
+            </div>
+            <pre id="linkedinCopy">Se você fala com devs brasileiros sobre IA, a pergunta que mais destrava conversa não é "qual modelo é melhor?".
+
+É "quanto isso custa todo mês?".
+
+Montei duas calculadoras PT-BR:
+- custo Codex/Claude em BRL
+- comissão para parceiros
+
+No token ai, o foco é token Codex e Claude com menor custo, Pix, BRL e sem cartão internacional.
+
+Calculadora de comissão:
+https://zk935217486-sys.github.io/api-ia-brasil-pix/ferramentas/calculadora-comissao-parceria-token-ai.html
+
+#DevBR #ClaudeAPI #Codex #Pix #Brasil #APIs</pre>
           </article>
+
           <article>
-            <strong>Creators dev</strong>
-            <p>Vídeo curto, post no LinkedIn ou thread com comparação real de custo converte melhor do que anúncio genérico.</p>
-          </article>
-          <article>
-            <strong>Comunidades locais</strong>
-            <p>Meetups, grupos de WhatsApp e hubs de startup tendem a reagir bem a Pix, BRL e suporte em português.</p>
+            <div class="copy-top">
+              <strong>Telegram/Discord</strong>
+              <button type="button" data-copy-target="groupCopy">Copiar</button>
+            </div>
+            <pre id="groupCopy">Para quem tem comunidade dev e quer medir se parceria vale a pena:
+
+fiz uma calculadora simples para estimar convites válidos, recarga média e comissão de 20%.
+
+https://zk935217486-sys.github.io/api-ia-brasil-pix/ferramentas/calculadora-comissao-parceria-token-ai.html
+
+Funciona melhor quando você compartilha junto com a calculadora de custo de Codex/Claude em BRL.</pre>
           </article>
         </div>
       </section>
@@ -221,8 +286,8 @@
         const retention = partnerNumber('retention') / 100;
         const months = Math.max(1, Math.round(partnerNumber('months')));
         const validUsersMonth = invites * validRate;
-        const gmvMonth = validUsersMonth * avgTopup;
-        const commissionMonth = gmvMonth * commissionRate;
+        const volumeMonth = validUsersMonth * avgTopup;
+        const commissionMonth = volumeMonth * commissionRate;
 
         let activeBase = 0;
         let commissionPeriod = 0;
@@ -231,11 +296,10 @@
           commissionPeriod += activeBase * avgTopup * commissionRate;
         }
 
-        document.getElementById('heroCommission').textContent = brl.format(commissionMonth);
         document.getElementById('commissionMonth').textContent = brl.format(commissionMonth);
         document.getElementById('validUsers').textContent = integer.format(Number(validUsersMonth.toFixed(1)));
         document.getElementById('validUsersText').textContent = `${validUsersMonth.toFixed(1).replace('.', ',')} convites válidos por mês`;
-        document.getElementById('gmvMonth').textContent = brl.format(gmvMonth);
+        document.getElementById('gmvMonth').textContent = brl.format(volumeMonth);
         document.getElementById('commissionPeriod').textContent = brl.format(commissionPeriod);
         document.getElementById('activeBase').textContent = integer.format(Math.round(activeBase));
       }
@@ -246,6 +310,18 @@
           const preset = partnerPresets[button.dataset.preset];
           Object.keys(preset).forEach((key) => { document.getElementById(key).value = preset[key]; });
           calculatePartner();
+        });
+      });
+      document.querySelectorAll('[data-copy-target]').forEach((button) => {
+        button.addEventListener('click', async () => {
+          const target = document.getElementById(button.dataset.copyTarget);
+          try {
+            await navigator.clipboard.writeText(target.textContent.trim());
+            button.textContent = 'Copiado';
+            window.setTimeout(() => { button.textContent = 'Copiar'; }, 1600);
+          } catch (error) {
+            button.textContent = 'Selecione o texto';
+          }
         });
       });
       calculatePartner();
