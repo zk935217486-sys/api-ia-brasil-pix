@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Calculadora de comissão para parceiros | token ai</title>
+    <meta
+      name="description"
+      content="Calcule quanto uma comunidade, creator ou dev pode ganhar indicando tokens Codex e Claude mais baratos no Brasil com Pix e 20% de comissão."
+    />
+    <meta
+      name="keywords"
+      content="calculadora comissão afiliado token IA, parceria comunidade dev Brasil, comissão Codex Claude Brasil, indicação token ai"
+    />
+    <link rel="canonical" href="https://zk935217486-sys.github.io/api-ia-brasil-pix/ferramentas/calculadora-comissao-parceria-token-ai.html" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Calculadora de comissão para parceiros | token ai",
+        "url": "https://zk935217486-sys.github.io/api-ia-brasil-pix/ferramentas/calculadora-comissao-parceria-token-ai.html",
+        "inLanguage": "pt-BR",
+        "description": "Ferramenta para estimar comissão mensal de parceiros que indicam o token ai para desenvolvedores brasileiros."
+      }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800;900&family=JetBrains+Mono:wght@500;700;800&family=Space+Grotesk:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZYXXBG3E59"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-ZYXXBG3E59');
+      document.addEventListener('click', function (event) {
+        var link = event.target.closest('a[href]');
+        if (!link || typeof gtag !== 'function') return;
+        if (link.href.indexOf('api.8uie.com/home') !== -1) {
+          gtag('event', 'support_cta_click', {
+            event_category: 'conversion',
+            event_label: link.textContent.trim()
+          });
+        }
+      });
+    </script>
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="../index.html" aria-label="Tokens Codex + Claude Brasil">
+        <span class="model-brand" aria-hidden="true">
+          <span class="model-chip model-chip-claude"><img src="../assets/logo-claude-icon.png" alt="" /></span>
+          <span class="model-chip model-chip-codex"><img src="../assets/logo-codex-icon.png" alt="" /></span>
+        </span>
+        <span class="brand-copy"><strong>Tokens Codex + Claude</strong><small>Brasil · Pix · BRL</small></span>
+        <span class="br-flag" aria-hidden="true"></span>
+      </a>
+      <nav aria-label="Navegação principal">
+        <a href="../index.html#comparacao">Preço</a>
+        <a href="../index.html#ferramentas">Calculadora</a>
+        <a href="../index.html#indicacao">Indicação</a>
+      </nav>
+      <a class="header-cta" href="https://api.8uie.com/home">R$5 via suporte</a>
+    </header>
+
+    <main class="calculator-page">
+      <section class="calculator-hero">
+        <div>
+          <p class="eyebrow">Ferramenta para parceiros</p>
+          <h1>Calcule quanto sua audiência pode render em comissão.</h1>
+          <p class="hero-text">
+            Se você tem grupo, canal, comunidade, newsletter ou audiência dev, esta página ajuda a estimar o potencial
+            da parceria do token ai. A comissão é de 20% sobre convites válidos que realmente entram no fluxo:
+            cadastro, tutorial e contato com o suporte TG para a experiência inicial.
+          </p>
+        </div>
+        <div class="calculator-ledger" aria-label="Resumo da comissão estimada">
+          <span>COMISSÃO</span>
+          <strong id="heroCommission">R$ 0</strong>
+          <small>estimativa mensal do parceiro</small>
+        </div>
+      </section>
+
+      <section class="calculator-shell" aria-label="Calculadora de comissão para parceiros">
+        <form class="calculator-form" id="partnerForm">
+          <div class="preset-row" aria-label="Perfis prontos">
+            <button type="button" data-preset="grupo">Grupo pequeno</button>
+            <button type="button" data-preset="creator">Creator técnico</button>
+            <button type="button" data-preset="comunidade">Comunidade ativa</button>
+          </div>
+
+          <div class="field-grid">
+            <label>
+              Novos convidados por mês
+              <input id="invites" type="number" min="0" step="1" value="25" />
+            </label>
+            <label>
+              Taxa que vira convite válido (%)
+              <input id="validRate" type="number" min="0" max="100" step="1" value="40" />
+            </label>
+            <label>
+              Recarga média mensal por usuário (BRL)
+              <input id="avgTopup" type="number" min="0" step="1" value="180" />
+            </label>
+            <label>
+              Comissão do parceiro (%)
+              <input id="commissionRate" type="number" min="0" max="100" step="1" value="20" />
+            </label>
+            <label>
+              Retenção para o mês seguinte (%)
+              <input id="retention" type="number" min="0" max="100" step="1" value="65" />
+            </label>
+            <label>
+              Meses ativos considerados
+              <input id="months" type="number" min="1" max="12" step="1" value="6" />
+            </label>
+          </div>
+
+          <p class="partner-note">
+            Use valores conservadores. O objetivo aqui é entender ordem de grandeza, não prometer faturamento.
+          </p>
+        </form>
+
+        <aside class="calculator-results" aria-live="polite">
+          <div class="result-primary">
+            <span>Comissão mensal estimada</span>
+            <strong id="commissionMonth">R$ 0,00</strong>
+            <small id="validUsersText">0 convites válidos por mês</small>
+          </div>
+          <div class="result-grid">
+            <div><span>Usuários válidos/mês</span><strong id="validUsers">0</strong></div>
+            <div><span>GMV mensal estimado</span><strong id="gmvMonth">R$ 0,00</strong></div>
+            <div><span>Comissão em 6 meses</span><strong id="commissionPeriod">R$ 0,00</strong></div>
+            <div><span>Base ativa ao final</span><strong id="activeBase">0</strong></div>
+          </div>
+          <p id="partnerExplain">
+            A parceria funciona melhor quando você compartilha primeiro uma ferramenta útil, como a calculadora de custo,
+            e não só um link seco da plataforma.
+          </p>
+          <div class="calculator-actions">
+            <a class="button primary" href="https://api.8uie.com/home">Falar com suporte sobre parceria</a>
+            <a class="button secondary" href="../artigos/parceria-comunidades-dev-brasil.html">Ver proposta para comunidades</a>
+            <a class="button secondary" href="./calculadora-custo-codex-claude.html">Abrir calculadora de custo</a>
+          </div>
+        </aside>
+      </section>
+
+      <section class="metrics">
+        <div class="section-heading">
+          <p class="eyebrow">Onde isso funciona melhor</p>
+          <h2>Parceria boa nasce de utilidade técnica.</h2>
+          <p>
+            O melhor parceiro não é quem joga link em todo lugar. É quem já conversa com devs que sofrem com custo de
+            Codex e Claude, querem pagar em Pix e precisam controlar gasto em BRL.
+          </p>
+        </div>
+        <div class="partner-grid">
+          <article>
+            <strong>Telegram e Discord</strong>
+            <p>Responda dúvida de custo com a calculadora e só depois apresente o token ai como sua solução.</p>
+          </article>
+          <article>
+            <strong>Creators dev</strong>
+            <p>Vídeo curto, post no LinkedIn ou thread com comparação real de custo converte melhor do que anúncio genérico.</p>
+          </article>
+          <article>
+            <strong>Comunidades locais</strong>
+            <p>Meetups, grupos de WhatsApp e hubs de startup tendem a reagir bem a Pix, BRL e suporte em português.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="faq">
+        <div class="section-heading">
+          <p class="eyebrow">FAQ parceiro</p>
+          <h2>Perguntas rápidas para quem quer indicar.</h2>
+        </div>
+        <details>
+          <summary>Quando a indicação conta como válida?</summary>
+          <p>Quando o novo usuário cria conta, segue o tutorial ou download necessário e chama o suporte TG para receber a experiência inicial.</p>
+        </details>
+        <details>
+          <summary>A comissão é de quanto?</summary>
+          <p>O programa atual trabalha com 20% de comissão em convites válidos.</p>
+        </details>
+        <details>
+          <summary>Qual é a melhor página para compartilhar primeiro?</summary>
+          <p>A calculadora de custo costuma abrir melhor a conversa porque resolve um problema real antes de pedir cadastro.</p>
+        </details>
+      </section>
+    </main>
+
+    <footer>
+      <span>token ai - tokens de Codex e Claude mais baratos para devs brasileiros.</span>
+      <a href="../index.html">Página principal</a>
+      <a href="https://api.8uie.com/home">Plataforma</a>
+    </footer>
+
+    <script>
+      const brl = new Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL' });
+      const integer = new Intl.NumberFormat('pt-BR');
+      const partnerFields = ['invites', 'validRate', 'avgTopup', 'commissionRate', 'retention', 'months'];
+      const partnerPresets = {
+        grupo: { invites: 25, validRate: 40, avgTopup: 180, commissionRate: 20, retention: 65, months: 6 },
+        creator: { invites: 80, validRate: 35, avgTopup: 220, commissionRate: 20, retention: 70, months: 6 },
+        comunidade: { invites: 180, validRate: 28, avgTopup: 260, commissionRate: 20, retention: 74, months: 6 }
+      };
+
+      function partnerNumber(id) {
+        return Number(document.getElementById(id).value || 0);
+      }
+
+      function calculatePartner() {
+        const invites = partnerNumber('invites');
+        const validRate = partnerNumber('validRate') / 100;
+        const avgTopup = partnerNumber('avgTopup');
+        const commissionRate = partnerNumber('commissionRate') / 100;
+        const retention = partnerNumber('retention') / 100;
+        const months = Math.max(1, Math.round(partnerNumber('months')));
+        const validUsersMonth = invites * validRate;
+        const gmvMonth = validUsersMonth * avgTopup;
+        const commissionMonth = gmvMonth * commissionRate;
+
+        let activeBase = 0;
+        let commissionPeriod = 0;
+        for (let month = 0; month < months; month += 1) {
+          activeBase = (activeBase * retention) + validUsersMonth;
+          commissionPeriod += activeBase * avgTopup * commissionRate;
+        }
+
+        document.getElementById('heroCommission').textContent = brl.format(commissionMonth);
+        document.getElementById('commissionMonth').textContent = brl.format(commissionMonth);
+        document.getElementById('validUsers').textContent = integer.format(Number(validUsersMonth.toFixed(1)));
+        document.getElementById('validUsersText').textContent = `${validUsersMonth.toFixed(1).replace('.', ',')} convites válidos por mês`;
+        document.getElementById('gmvMonth').textContent = brl.format(gmvMonth);
+        document.getElementById('commissionPeriod').textContent = brl.format(commissionPeriod);
+        document.getElementById('activeBase').textContent = integer.format(Math.round(activeBase));
+      }
+
+      partnerFields.forEach((id) => document.getElementById(id).addEventListener('input', calculatePartner));
+      document.querySelectorAll('[data-preset]').forEach((button) => {
+        button.addEventListener('click', () => {
+          const preset = partnerPresets[button.dataset.preset];
+          Object.keys(preset).forEach((key) => { document.getElementById(key).value = preset[key]; });
+          calculatePartner();
+        });
+      });
+      calculatePartner();
+    </script>
+  </body>
+</html>
