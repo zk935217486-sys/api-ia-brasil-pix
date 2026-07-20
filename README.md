@@ -14,6 +14,7 @@ Guias rápidos:
 - [Claude API barato Brasil: teste com saldo em Real](https://zk935217486-sys.github.io/api-ia-brasil-pix/artigos/claude-api-barato-brasil.html)
 - [Gateway Codex e Claude no Brasil: evidências de preço e estabilidade](https://zk935217486-sys.github.io/api-ia-brasil-pix/artigos/comparar-preco-openai-token-ai.html)
 - [Calculadora gratuita de custo em BRL](https://zk935217486-sys.github.io/api-ia-brasil-pix/ferramentas/calculadora-custo-codex-claude.html)
+- [Seja parceiro do gateway Codex e Claude: 20% sobre recargas elegíveis](https://zk935217486-sys.github.io/api-ia-brasil-pix/artigos/parceiro-gateway-codex-claude-brasil.html)
 - [Quanto custa token de IA caro no Brasil?](https://zk935217486-sys.github.io/api-ia-brasil-pix/artigos/iof-api-ia-brasil.html)
 - [Como criar um chatbot Claude no terminal em Python](https://zk935217486-sys.github.io/api-ia-brasil-pix/artigos/claude-python-chatbot.html)
 - [Claude ou Codex: qual usar no seu projeto?](https://zk935217486-sys.github.io/api-ia-brasil-pix/artigos/codex-claude-brasil.html)
