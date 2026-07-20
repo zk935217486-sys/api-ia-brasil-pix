@@ -1662,6 +1662,149 @@ details p {
   margin-top: 18px;
 }
 
+.evidence-page {
+  background:
+    linear-gradient(180deg, rgba(50, 188, 173, 0.08), transparent 360px),
+    #ffffff;
+}
+
+.evidence-page article {
+  max-width: 1040px;
+}
+
+.evidence-page h1 {
+  max-width: 920px;
+}
+
+.evidence-summary,
+.evidence-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  margin: 28px 0;
+}
+
+.evidence-summary div,
+.method-card,
+.source-list,
+.proof-callout {
+  padding: 20px;
+  background: #f8fbf8;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+}
+
+.evidence-summary div {
+  display: grid;
+  gap: 8px;
+}
+
+.evidence-summary strong {
+  color: var(--blue);
+  font-family: var(--mono);
+  font-size: 0.82rem;
+}
+
+.evidence-summary span,
+.method-card span {
+  color: var(--muted);
+  font-size: 0.9rem;
+  font-weight: 800;
+}
+
+.proof-callout {
+  margin: 24px 0 34px;
+  background:
+    linear-gradient(120deg, rgba(255, 207, 50, 0.24), rgba(50, 188, 173, 0.12)),
+    #ffffff;
+  border-color: rgba(50, 188, 173, 0.42);
+}
+
+.proof-callout strong,
+.source-list strong {
+  display: block;
+  margin-bottom: 7px;
+  color: var(--ink);
+  font-family: var(--display);
+  font-size: 1.2rem;
+}
+
+.proof-callout p,
+.method-card p {
+  margin-bottom: 0;
+  color: var(--muted);
+}
+
+.evidence-table {
+  margin: 20px 0 10px;
+}
+
+.evidence-table table {
+  min-width: 940px;
+}
+
+.evidence-table td:last-child {
+  background: #ffffff;
+  color: #313d49;
+  font-weight: 600;
+}
+
+.method-card {
+  display: grid;
+  align-content: start;
+  gap: 8px;
+  background: #ffffff;
+  box-shadow: 0 14px 32px rgba(22, 16, 25, 0.06);
+}
+
+.method-card strong {
+  color: var(--ink);
+  font-family: var(--display);
+  font-size: 1.35rem;
+  line-height: 1.1;
+}
+
+.method-list {
+  display: grid;
+  gap: 12px;
+  padding-left: 25px;
+  color: #313d49;
+}
+
+.method-list a,
+.article-page .note a {
+  color: var(--blue);
+  font-weight: 800;
+}
+
+.source-list {
+  display: grid;
+  gap: 9px;
+  margin: 28px 0;
+  background: var(--terminal);
+  color: #eaf8f4;
+}
+
+.source-list strong {
+  color: var(--yellow);
+}
+
+.source-list span {
+  padding-left: 17px;
+  border-left: 3px solid var(--pix);
+}
+
+.article-cta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 26px;
+}
+
+.article-cta .button {
+  margin-top: 0;
+}
+
 footer {
   flex-wrap: wrap;
   justify-content: center;
@@ -1789,6 +1932,11 @@ footer a {
     grid-template-columns: 1fr;
   }
 
+  .evidence-summary,
+  .evidence-grid {
+    grid-template-columns: 1fr;
+  }
+
   .calculator-results {
     position: static;
   }
@@ -1868,6 +2016,10 @@ footer a {
 
   .button {
     width: 100%;
+  }
+
+  .article-cta {
+    display: grid;
   }
 
   .field-grid {

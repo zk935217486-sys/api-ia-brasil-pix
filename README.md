@@ -1,8 +1,8 @@
 # [PT-BR] Tokens Codex e Claude baratos no Brasil
 
-🇧🇷 Exemplos simples para devs brasileiros testarem Codex e Claude com menor custo por token, Pix e saldo em Real.
+🇧🇷 Exemplos simples para devs brasileiros consumirem Codex e Claude por uma camada de acesso com menor custo por token, Pix e saldo em Real.
 
-Este repositório mostra como criar chamadas básicas para Claude e Codex usando Python e JavaScript, com foco em quem está no Brasil e quer reduzir custo de consumo de token. Pix, Real e R$5 grátis ajudam no onboarding, mas o ponto principal é gastar menos por uso.
+Este repositório mostra como criar chamadas básicas para Claude e Codex usando Python e JavaScript, com foco em quem está no Brasil e quer reduzir custo de consumo de token. O token ai funciona como um gateway de acesso e cobrança para esse consumo: Pix, Real e R$5 grátis ajudam no onboarding, mas o ponto principal é medir preço, estabilidade e custo por uso.
 
 > Plataforma citada nos exemplos: [token ai](https://api.8uie.com/home)
 
@@ -12,7 +12,8 @@ Guias rápidos:
 
 - [Codex token barato no Brasil: como reduzir custo de uso](https://zk935217486-sys.github.io/api-ia-brasil-pix/artigos/codex-token-barato-brasil.html)
 - [Claude API barato Brasil: teste com saldo em Real](https://zk935217486-sys.github.io/api-ia-brasil-pix/artigos/claude-api-barato-brasil.html)
-- [Compra direta vs token ai: onde está a economia?](https://zk935217486-sys.github.io/api-ia-brasil-pix/artigos/comparar-preco-openai-token-ai.html)
+- [Gateway Codex e Claude no Brasil: evidências de preço e estabilidade](https://zk935217486-sys.github.io/api-ia-brasil-pix/artigos/comparar-preco-openai-token-ai.html)
+- [Calculadora gratuita de custo em BRL](https://zk935217486-sys.github.io/api-ia-brasil-pix/ferramentas/calculadora-custo-codex-claude.html)
 - [Quanto custa token de IA caro no Brasil?](https://zk935217486-sys.github.io/api-ia-brasil-pix/artigos/iof-api-ia-brasil.html)
 - [Como criar um chatbot Claude no terminal em Python](https://zk935217486-sys.github.io/api-ia-brasil-pix/artigos/claude-python-chatbot.html)
 - [Claude ou Codex: qual usar no seu projeto?](https://zk935217486-sys.github.io/api-ia-brasil-pix/artigos/codex-claude-brasil.html)
@@ -27,7 +28,7 @@ Muita gente no Brasil quer usar Codex e Claude em produto real, mas o consumo de
 - preço por token vira custo recorrente;
 - cartão internacional, dólar, IOF e spread ainda pioram a conta.
 
-A proposta do [token ai](https://api.8uie.com/home) é vender consumo de tokens Codex e Claude com menor custo por uso para devs brasileiros. Pix, preço em Real, R$5 de teste grátis e suporte em português via Telegram reduzem a fricção de compra.
+A proposta do [token ai](https://api.8uie.com/home) é facilitar o consumo de Codex e Claude por um gateway de acesso com menor custo por uso para devs brasileiros. Pix, preço em Real, R$5 de teste grátis e suporte em português via Telegram reduzem a fricção de compra.
 
 ## Começando em 2 minutos
 
